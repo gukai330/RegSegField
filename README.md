@@ -40,7 +40,7 @@ This repository is built upon [Nerfstudio 1.1.5](https://github.com/nerfstudio-p
 
 3. **Clone the Repository and Install Nerfstudio**
     ```bash
-    git clone {CURRENT_PROJECT_URL}
+    git clone https://github.com/gukai330/RegSegField.git
     cd RegSegField
     pip install --upgrade pip setuptools
     pip install -e .
@@ -58,7 +58,7 @@ Before running the mask matching or training steps
 cd /path/to/Semantic-SAM
 
 python extract_mask.py \
-    --dataset_root /path/to/dtu_data_gaussian \
+    --dataset_root /path/to/dataset \
     --sam_ckpt ./pretrained/swinl_only_sam_many2many.pth
 ```
 ### 2D Match Extraction with COLMAP
