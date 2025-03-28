@@ -124,12 +124,10 @@ Special thanks to the great work of the Nerfstudio comunity and the authors of S
 If you find this repository useful, please consider citing our work in your publications.
 
 ```
-@inproceedings{Gu2023RegSegField,
-  author    = {Kai Gu and Thomas Maugey},
-  title     = {RegSegField: Mask-Regularization and Hierarchical Segmentation for Novel View Synthesis from Sparse Inputs},
-  booktitle = {Proceedings of the 21st ACM SIGGRAPH Conference on Visual Media Production (CVMP)},
-  month     = {December},
-  year      = {2023},
-  doi       = {10.1145/3697294.3697299}
+@inproceedings{10.1145/3697294.3697299,
+  author = {Gu, Kai and Maugey, Thomas and Sebastian, Knorr and Guillemot, Christine},
+  title = {RegSegField: Mask-Regularization and Hierarchical Segmentation for Novel View Synthesis from Sparse Inputs},
+  year = {2024},
+  booktitle = {Proceedings of 21st ACM SIGGRAPH Conference on Visual Media Production (CVMP)}
 }
 ```
