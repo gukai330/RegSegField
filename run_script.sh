@@ -1,0 +1,25 @@
+python -m nerfstudio.scripts.train regseg-splatfacto \
+--data "/mnt/e/data/dtu_data_gaussian/scan64" \
+--experiment_name "scan64_test" \
+--pipeline.use-reg True \
+--pipeline.use_depth False \
+--pipeline.model.random_init False \
+--pipeline.model.random_scale 15 \
+--pipeline.model.mask_count_thresh 2 \
+--pipeline.model.use_binary_mask_for_training True \
+--pipeline.reg_from 800 \
+--pipeline.reg_weight 0.05 \
+--pipeline.learn_grouping True \
+--pipeline.train_mask_encoder True \
+--pipeline.model.background_color "black" \
+--pipeline.use_tv_loss True \
+--vis wandb \
+sam-dataparser \
+--use_mask_matching True \
+--mask_loader_ckpt "scan64_3_sorted.pth" \
+--use_llff_hold False \
+--input_views 3 \
+--downscale_factor 4 \
+--masks_path "masks_allprompts" \
+--use_point_from_image False \
+--binary_masks_path "idr_masks"
